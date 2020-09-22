@@ -1,3 +1,5 @@
+
+/* section_1 */
 header{
     padding: 20px 0 ;
     position:fixed;
@@ -5,21 +7,31 @@ header{
     width:100%;
    
 }
+.container-fluid{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+/* Navigation */
 .navbar-brand img{
     height:50px;
   
 }
-.navbar-brand{
-    margin-left:75px;
-}
 .navbar{
     padding:0;
 }
+.navbar-brand{
+    margin-left:75px;
+}
 .apply{
    margin-right:30px;
-   color:white;
- 
-    
+   color:white; 
+   font-weight:500; 
+}
+.apply:hover{
+    text-decoration:none;
+    color:white;
 }
 .nav-right{
     margin-right: 100px;
@@ -107,7 +119,7 @@ header{
         width:90%;
         height:500px;
        margin:-15px 0 0 62px;
-       padding:10px 0 0 40px;
+       padding:10px 0 0 55px;
     }
   #navbarSupportedContent li{
     display: inline-block; 
@@ -138,6 +150,13 @@ header{
       height:15px;
   }
 
+  /* image slider */
+
+   .carousel-control-prev,  .carousel-control-next{
+      top:50%;
+      bottom:50%;
+  }
+ 
  
   .carousel-caption h1{
     font-size:65px;
@@ -159,10 +178,12 @@ header{
       bottom:100px;
       left:50%;
       margin-left:-40px;
+
   }
   .demo a{
       display:block;
       position:relative;
+      
   }
   .demo a span{
       position: absolute;
@@ -171,6 +192,7 @@ header{
       width: 80px;
       height: 80px;
       border-radius: 50%;
+     
   }
   .demo a span:before {
     position: absolute;
@@ -199,19 +221,157 @@ header{
     border-bottom: 2px solid #fff;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
+/* About_section */
 
-  @media only screen and (max-width: 1024px){
-      .apply{
-          display:none;
-      }
+.second-content{
+    display:flex;
+}
+
+.about{
+    background:#EF2B55;
+    color:white;
+    padding: 0 30px 40px  45px;
+    
+}
+.about h1{
+    padding: 85px 0 30px 0;
+    font-size:35px;
+    font-weight:bold;
+}
+.about p{
+    font-size:16px;
+    padding-bottom:30px;
+}
+.about button{
+    font-size:14px;
+    color:#EF2B55;
+    border:none;
+    height:35px;
+    width:160px;
+    cursor:pointer;
+  
+}
+.about button:hover{
+    border:1px solid #2cbfd3;
+    color:#2cbfd3;
+}
+
+/* Projects */
+
+.project_section{
+    background-image: url("./img/project.png");
+    background-size: cover;
+    height:660px;
+}
+.project{
+    display:flex;
+    padding: 30px 60px 0 150px;
+}
+.project_section h1{
+    font-size:35px;
+    font-weight:bold;
+    color:#EF2B55;
+    padding:90px 0 0 200px;
+}
+.caption{
+    padding:50px 0 0 30px;
+}
+.caption small{
+   font-size:14px;
+   color:#3F4040;
+   
+}
+.caption h3{
+    font-size:30px;
+    padding-top:15px;
+    color:#00153B;
+    font-weight:bold;
+}
+.caption p{
+    font-size:18px;
+    padding-top:15px;
+    color:#3F4040;
+}
+.caption button{
+    background:#EF2B55;
+    color:white;
+    font-size:14px;
+    border:none;
+    height:35px;
+    width:100px;
+    cursor:pointer;
+    margin-top:15px;
+}
+.fa-chevron-left, .fa-chevron-right{
+    color:#fa0036;
+  
+}
+
+/* tools and technologies */
+
+.tool h1{
+    font-size:35px;
+    color:#EF2B55;
+    padding:60px 0 0 150px;
+    font-weight:bold;
+}
+.row{
+    margin:50px 150px 60px 150px; 
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 50px 0 40px 70px;
+    border:1px solid #707070;
+   
+   
+  }
+.column img{
+    width: 95px;
+    height:115px;
+}
+    
+/* team  */
+
+.team{
+    background-image: url("./img/team.png");
+    background-size:cover;
+    height:660px;
+    width:100%;
+   display:inline-flex;
+  
+}
+.team h1{
+    font-size:40px;
+    padding: 255px 0 0 350px;
+     position:relative;
+}
+.team button{
+    width:200px;
+    height:50px;
+    background:#EF2B55;
+    font-size:16px;
+    border:none;
+   margin: 320px 0 0 320px;
+   cursor:pointer;
+
+}
+.team a{
+    text-decoration:none;
+    color:white;
+}
+
+/* Responsive */
+@media only screen and (max-width:1000px){
+      /* Navigation */
       .navbar-brand{
         margin:0;
       }
       .nav-right{
-        margin:0;
+        margin-right:50px;
     }
       .navbar-nav {
         
@@ -243,6 +403,13 @@ header{
       .item-nav{
           font-size:20px;
       }
+
+      /* image slider */
+      #slides .carousel-inner img{
+          width:100%;
+          
+      }
+
       .carousel-caption h1{
           font-size:35px;
           padding-bottom:35px;
@@ -258,4 +425,148 @@ header{
       .carousel-inner{
           height:100%;
       }
-}
+
+      /* About Section */
+
+      .second-content img{
+        width:50%;
+        height:400px;
+      }
+      .second-content{
+          display:flex;
+      }
+      .about h1{
+        font-size:25px;
+        padding:30px 0 15px 0;
+       
+    }
+    .about p{
+        font-size:12px;
+        padding-bottom:15px;
+    }
+    .about button{
+        font-size:10px;
+    }
+
+    /* Projects  */
+
+        .project img{
+            display:none;
+        }
+        .project_section h1{
+            font-size:25px;
+            padding:30px 0 0 100px ;
+        }
+        .project_section{
+            height:100%;
+            width:100%;
+        }
+        .project{
+            padding:0;
+        }
+        .caption{
+            padding:30px 100px;
+            text-align:justify;
+        }
+        .caption small{
+            font-size:10px;
+            
+         }
+         .caption h3{
+             font-size:20px;
+             padding-top:10px;
+             color:#00153B;
+         }
+         .caption p{
+             font-size:12px;
+             padding-top:10px;
+             color:#3F4040;
+         }
+         .caption button{
+             font-size:10px;
+         }
+
+         /* tools and technologies  */
+         .tool h1{
+            font-size:25px;
+            padding:30px 0 0 50px;
+        }
+        .row{
+            margin:30px 50px 30px 50px; 
+        }
+         .column {
+            width: 25%;
+            padding:40px;
+          
+          }
+          .column img{
+            width: 100%;
+            height:100%;
+        }
+
+         /* team  */
+         .team{
+            /* display:none; */
+           height:100%;
+           width:100%;
+         }
+         .team h1{
+            font-size:25px;
+            padding: 140px 0 0 210px;
+        }
+        .team button{
+            width:150px;
+            height:40px;
+            font-size:14px;
+           margin: 180px 0 140px 170px;
+        
+        
+        }
+        }
+        
+        @media only screen and (max-width:767px){
+
+               /* Navigation */
+
+    .apply{
+        display:none;
+    }
+  
+    /* About Section */
+
+    .second-content img{
+      width:100%;
+      height:100%;
+    }
+    .second-content{
+        display:block;
+    }
+ 
+
+  /* Projects  */
+
+      .project_section h1{
+          padding:30px 0 0 50px ;
+      }
+     
+    
+      .caption{
+          padding:30px 50px;
+        
+      }
+     
+       /* tools and technologies  */
+   
+       .column {
+          width: 50%;
+          padding:25px;
+        
+        }
+
+       /* team  */
+       .team{
+          display:none;
+       }
+      }
+         
+  
