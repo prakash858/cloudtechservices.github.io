@@ -7,7 +7,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <link href="style.css" rel="stylesheet">
     <title>Cloud Tech Services</title>
 </head>
@@ -35,7 +35,7 @@
       <!-- Links -->
       <ul class="navbar-nav">
         <li class="top-left">
-            <a href="#">
+            <a href="./about-us.html">
                 <small class="nav_desc">Why Work With Us?</small></br>
                 <span class="item-nav">About Us</span></br></br>
                 <span class="nav-arrow"><img src="./img/arrow.png"></span>   
@@ -43,7 +43,7 @@
         </li>
 
         <li class="top-center">
-            <a href="#">
+            <a href="./service.html">
                 <small class="nav_desc">What We Do?</small></br>
                 <span class="item-nav">Services</span></br></br>
                 <span class="nav-arrow"><img src="./img/arrow.png"></span>   
@@ -51,7 +51,7 @@
         </li>
 
         <li class="top-right">
-            <a href="#">
+            <a href="./project.html">
                 <small class="nav_desc">What We Did?</small></br>
                 <span class="item-nav">Projects</span></br></br>
                 <span class="nav-arrow"><img src="./img/arrow.png"></span>  
@@ -90,13 +90,14 @@
 </header>
 
 <div class="demo">
-    <a href="#">
+    <a href="#section_2">
         <span>
         </span>
     </a>
 </div> 
 
 <!--- Image Slider -->
+<div class="home-intro">
 <div id ="slides" class="carousel slide" data-ride="carousel" >
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -139,6 +140,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+</div>
     
     <!-- About Us -->
     <div class="container-fluid">
@@ -152,6 +154,7 @@
         </div>
     
     </div>
+
 
     <!--Projects -->
     <div id="section_3" class ="container-fluid">
@@ -259,7 +262,61 @@
             </div>
         </div>
 
+        <!-- footer -->
 
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-wrapper">
+                <div class="footer">
+                    <div class="footer-logo">
+                        <img src="./img/logo.png" alt="footer-logo" height="50">
+                        <p>Slogan of Cloud Tech Services company</p>
+                    </div>
+                    <div class="contact">
+                        <h5>Contact Us</h5>
+                        <div class="contact-type">
+                        <div class="nepal-contact">
+                            <h6>Nepal Contact</h6>
+                            <p>Cloud Tech Nepal Pvt. Ltd </br>
+                            Sanepa-01, Lalitpur</p>
+                            <p><i class="fas fa-phone-alt"></i><a href="#"> 01-6201644 </a></br>
+                            <i class="fas fa-envelope"></i> <a href="#"> info@cloudtechnepal.com </a></p>
+                           
+                        </div>
+                        <div class="us-contact">
+                            <h6>US Contact</h6>
+                            <p>Cloud Tech Services LLC  </p>
+                               <p> <i class="fas fa-envelope"></i> <a href="#"> info@cloudservice.com </a></p>
+                           
+                        </div>
+                    </div>
+                    </div>
+                        <div class="link">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="./about-us.html">About Us</a></li>
+                                <li><a href="./service.html">Services</a></li>
+                                <li><a href="./project.html">Projects</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                </div> 
+                <div class="footer-end">
+                    <div class="copyright">
+                        <p>&copy; Copyright 2018 - Cloud Tech Services LLC. All rights reserved.</p>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f "></i> </a>
+                        <a href="#"><i class="fab fa-twitter "></i> </a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i> </a>
+                        <a href="#"><i class="fab fa-facebook-messenger"></i> </a>
+                    </div>
+                </div>  
+                </div>       
+            </div>
+        </footer>
 
 
 </body>
@@ -273,4 +330,24 @@ $('.first-button').on('click', function () {
 });
 
 });
+
+const header = document.querySelector("header");
+const sectionOne = document.querySelector(".home-intro");
+const sectionOneOptions = {
+    rootMargin: "-200px 0px 0px 0px"
+};
+const sectionOneObserver = new IntersectionObserver(function(
+    entries,
+    sectionOneObserver)
+    {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                header.classList.add("nav-scrolled");
+            }else{
+                header.classList.remove("nav-scrolled");
+            }
+        });
+    },
+ sectionOneOptions);
+ sectionOneObserver.observe(sectionOne);
 </script>
