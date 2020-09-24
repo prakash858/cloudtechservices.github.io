@@ -1,0 +1,125 @@
+.container-fluid{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+.career-intro{
+    background-image: url(./img/hero1.jpg);
+    background-size:cover;
+    height:520px;
+}
+.career-intro h1{
+    font-size:65px;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+    padding-top:230px;
+}
+.initial{
+    background-image: url("./img/success.png");
+   background-size:cover;
+   height:350px;
+}
+.initial p{
+    font-size:25px;
+    color:#666666;
+    padding:50px 200px 0 200px;
+   
+}
+.contents{
+    background-image:url(./img/service.jpg);
+    background-size:cover;
+    box-shadow: inset 2000px 0 0 0 rgba(293, 43, 85, 0.65);
+  
+}
+.contents img{
+     position:absolute;
+     height:350px;
+     width:850px;
+    left:0;
+    right:0;
+    bottom:0;
+    top:1150px;
+    margin:auto;
+}
+.contents h2{
+    text-align:center;
+    padding-top:250px;
+    color:white;
+    font-style:italic;
+    font-weight:500px;
+}
+.contents .row{
+    margin:30px 0 0  200px;
+}
+.contents .column{
+    width:35%;
+    background:white;
+    margin:25px;
+    text-align:center;
+    padding:40px 0;
+}
+.contents .column h3{   
+    color:#666666;
+}
+
+.contents .column button{
+    margin-top:30px;
+    width:150px;
+    height:35px;
+    border: 2px solid #EF2B55;
+    color:#EF2B55;
+  cursor:pointer;
+  background:none;
+    text-decoration:none;
+}
+
+@media only screen and (max-width:1000px){
+    .career-intro h1{
+        font-size:45px;
+    }
+    .initial p{
+        font-size:20px;
+        padding:50px 80px 0 80px;
+    }
+    .contents img{
+        width:80%;
+        height:250px;
+    }
+    .contents h2{
+        padding-top:100px;
+    }
+    .contents .row{
+        margin-left:100px;;
+    }
+    .contents.column{
+        width:50%;
+    }
+}
+    @media only screen and (max-width:767px)
+    {
+        .career-intro h1{
+            font-size:35px;
+        }
+        .initial p{
+        
+            padding:50px 20px 0 20px;
+        }
+        .contents img{
+            width:80%;
+            height:150px;
+        }
+        .contents h2{
+            padding-top:50px;
+        }
+        .contents .row{
+            margin:0;
+        }
+        .contents .column{
+            width:100%;
+            margin:15px;
+        }
+        .contents .column h3{
+            font-size:25px;
+        }
+    }
