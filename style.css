@@ -6,73 +6,22 @@
       bottom:50%;
   }
  
- 
   .carousel-caption h1{
-    font-size:65px;
+    font-size:90px;
     font-weight:bold;
-    padding-bottom:25px;
+    padding-bottom:52px;
     color:#EF2B55;
   }
   .carousel-caption h2{
-      font-size:35px;
+      font-size:60px;
       font-weight:bold;
-      padding-bottom:20px;
+      padding-bottom:52px;
   }
   .carousel-caption p{
-      padding-bottom:130px;
+      font-size:25px;
+      padding-bottom:230px;
   }
-  .demo {
-      z-index: 10;
-      position:absolute;
-      bottom:100px;
-      left:50%;
-      margin-left:-40px;
-
-  }
-  .demo a{
-      display:block;
-      position:relative;
-      
-  }
-  .demo a span{
-      position: absolute;
-      top: 0;
-      background: #454545;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-     
-  }
-  .demo a span:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    content: '';
-    width: 80px;
-    height: 80px;
-    box-shadow: 0 0 0 0 rgba(255,255,255,.1);
-    border-radius: 100%;
-    opacity: 0;
-    -webkit-animation: sdb03 3s infinite;
-    animation: sdb03 3s infinite;
-    box-sizing: border-box;
-}
-.demo a span:after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    width: 20px;
-    height: 20px;
-    margin: -15px 0 0 -10px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box; 
-}
-
+  
 /* About_section */
 
 .second-content{
@@ -82,24 +31,24 @@
 .about{
     background:#EF2B55;
     color:white;
-    padding: 0 30px 40px  45px;
+    padding: 0 147px 40px  45px;
     
 }
 .about h1{
-    padding: 85px 0 30px 0;
-    font-size:35px;
+    padding: 140px 0 70px 0;
+    font-size:45px;
     font-weight:bold;
 }
 .about p{
-    font-size:16px;
-    padding-bottom:30px;
+    font-size:20px;
+    padding-bottom:92px;
 }
 .about button{
-    font-size:14px;
+    font-size:18px;
     color:#EF2B55;
     border:none;
-    height:35px;
-    width:160px;
+    height:50px;
+    width:205px;
     cursor:pointer;
   
 }
@@ -113,46 +62,46 @@
 .project_section{
     background-image: url("./img/project.png");
     background-size: cover;
-    height:660px;
+    height:1020px;
 }
 .project{
     display:flex;
-    padding: 30px 60px 0 150px;
+    padding: 40px 115px 0 258px;
 }
 .project_section h1{
-    font-size:35px;
+    font-size:45px;
     font-weight:bold;
     color:#EF2B55;
-    padding:90px 0 0 200px;
+    padding:105px 0 0 258px;
 }
 .caption{
-    padding:50px 0 0 30px;
+    padding:80px 0 0 0px;
 }
 .caption small{
-   font-size:14px;
+   font-size:18px;
    color:#3F4040;
    
 }
 .caption h3{
-    font-size:30px;
-    padding-top:15px;
+    font-size:45px;
+    padding-top:25px;
     color:#00153B;
     font-weight:bold;
 }
 .caption p{
-    font-size:18px;
-    padding-top:15px;
+    font-size:24px;
+    padding-top:25px;
     color:#3F4040;
 }
 .caption button{
     background:#EF2B55;
     color:white;
-    font-size:14px;
+    font-size:18px;
     border:none;
-    height:35px;
-    width:100px;
+    height:46px;
+    width:144px;
     cursor:pointer;
-    margin-top:15px;
+    margin-top:50px;
 }
 .fa-chevron-left, .fa-chevron-right{
     color:#fa0036;
@@ -162,25 +111,26 @@
 /* tools and technologies */
 
 .tool h1{
-    font-size:35px;
+    font-size:60px;
     color:#EF2B55;
-    padding:60px 0 0 150px;
+    padding:105px 0 0 260px;
     font-weight:bold;
 }
 .row{
-    margin:50px 150px 60px 150px; 
+    margin:75px 260px 115px 260px; 
 }
 .column {
     float: left;
     width: 25%;
-    padding: 50px 0 40px 70px;
+    text-align:center;
+    padding:60px;
     border:1px solid #707070;
    
    
   }
 .column img{
-    width: 95px;
-    height:115px;
+    width: 155px;
+    height:200px;
 }
     
 /* team  */
@@ -188,23 +138,24 @@
 .team{
     background-image: url("./img/team.png");
     background-size:cover;
-    height:660px;
+    height:950px;
     width:100%;
    display:inline-flex;
   
 }
 .team h1{
-    font-size:40px;
-    padding: 255px 0 0 350px;
+    font-size:45px;
+    padding: 370px 0 0 510px;
      position:relative;
+     line-height:70px;
 }
 .team button{
-    width:200px;
-    height:50px;
+    width:230px;
+    height:65px;
     background:#EF2B55;
-    font-size:16px;
+    font-size:18px;
     border:none;
-   margin: 320px 0 0 320px;
+   margin: 475px 0 0 480px;
    cursor:pointer;
 
 }
@@ -216,22 +167,23 @@
 
 
 /* Responsive */
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1500px){
      
 
       /* image slider */
       #slides .carousel-inner img{
           width:100%;
+         height:100%;
           
       }
 
       .carousel-caption h1{
-          font-size:35px;
+          font-size:40px;
           padding-bottom:35px;
       }
       .carousel-caption h2{
-          font-size:20px;
-          padding-bottom:200px;
+          font-size:30px;
+          padding-bottom:130px;
       }
 
       .carousel-caption p{
@@ -250,6 +202,9 @@
       .second-content{
           display:flex;
       }
+      .about{
+          padding:0 20px 0 30px;
+      }
       .about h1{
         font-size:25px;
         padding:30px 0 15px 0;
@@ -260,7 +215,9 @@
         padding-bottom:15px;
     }
     .about button{
-        font-size:10px;
+        font-size: 10px;
+        width:150px;
+        height:30px;
     }
 
     /* Projects  */
@@ -280,7 +237,7 @@
             padding:0;
         }
         .caption{
-            padding:30px 100px;
+            padding:50px 100px;
             text-align:justify;
         }
         .caption small{
@@ -299,6 +256,9 @@
          }
          .caption button{
              font-size:10px;
+             height:30px;
+             width:100px;
+             margin-top:10px;
          }
 
          /* tools and technologies  */
@@ -311,7 +271,7 @@
         }
          .column {
             width: 25%;
-            padding:40px;
+            padding:45px;
           
           }
           .column img{
@@ -328,19 +288,26 @@
          .team h1{
             font-size:25px;
             padding: 140px 0 0 210px;
+            line-height:35px;
         }
         .team button{
             width:150px;
             height:40px;
             font-size:14px;
-           margin: 180px 0 140px 170px;
+           margin: 180px 0 140px 150px;
         }
 
-        
+    }
         
         @media only screen and (max-width:767px){
 
-              
+        .carousel-caption h2{
+            display:none;
+        }      
+        .carousel-caption h1{
+            font-size:30px;
+            padding-bottom:auto;
+        }
   
     /* About Section */
 
@@ -351,7 +318,9 @@
     .second-content{
         display:block;
     }
-}
+    .about button{
+        margin-bottom: 20px;
+    }
 
   /* Projects  */
 

@@ -3,31 +3,33 @@
 .about-intro{
     background-image: url("./img/about.jpeg");
     background-size: cover;
-    height:540px;
+    height:760px;
 }
 .about-intro h1{
-    font-size:65px;
+    font-size:90px;
     font-weight:bold;
     color:white;
     text-align:center;
-    padding-top:230px;
+    padding-top:315px;
     text-shadow:0px 4px #3C3C3C;
 }
 .why-us{
     display:flex;
+    width:100%;
 }
 .about{
-    padding:35px 20px 0 30px;
+    padding:100px 90px 0 90px;
 }
 .about h1{
-    font-size:35px;
+    font-size:60px;
     font-weight:bold;
     color: #EF2B55;
 }
 .about p{
-    font-size:14px;
+    font-size:18px;
     color:#2B2B2B;
     padding-top:25px;
+   
 }
 .motto{
     background-image: url("./img/hero2.jpg");
@@ -35,55 +37,63 @@
     box-shadow: inset 2000px 0 0 0 rgba(293, 43, 85, 0.75);
     text-align:center;
     color:white;
-    padding:100px 100px 60px 100px;
+    padding:100px 330px 100px 330px;
 }
 .motto h1{
-    font-size:30px;
+    font-size:40px;
     font-style:italic;
 }
 .motto p{
     padding-top:40px;
+    font-size:20px;
 }
 .meet-section{
     background-image: url("./img/meet-team.png");
     background-size:cover;
-    height:580px;
+    height:840px;
     padding-top:35px;
 }
 .meet-team{
     border-radius: 50%;
-    height:520px;
-    width:520px;
+    height:760px;
+    width:760px;
     background-color:#EF2B55;
     text-align:center;
-    margin-left:370px;
+    margin-left:580px;
     padding:80px 50px 0 50px;
     color:white;
    
 }
 .meet-team h2{
-    font-size:35px;
+    font-size:60px;
     font-weight:bold;
 }
 .meet-team p{
-    padding-top:20px;
+    padding-top:50px;
+    font-size:20px;
    
 }
 .meet-team button{
-    margin-top:15px;
-    width:200px;
-    height:40px;
+    margin-top:45px;
+    width:280px;
+    height:55px;
     background:none;
     border:2px solid white;
     cursor:pointer;
     color:white;
+    font-size:18px;
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1500px){
     
 /* about  */
+.about-intro{
+    height:450px;
+}
     .about-intro h1{
         font-size:45px;
+        padding-top:200px;
+        
     }
     .why-us{
         display:block;
@@ -93,12 +103,14 @@
       height:300px;
        
     }
+    .about{
+        padding:50px 40px 0 40px;
+    }
     .about h1{
         font-size:25px;
     }
     .about p{
         font-size:12px;
-        padding-top:15px;
     }
     .motto{
         padding:60px 100px 40px 100px;
@@ -129,6 +141,7 @@
         width:120px;
         height:30px;
         font-size:12px;
+        margin-top:auto;
     }
 
 }
@@ -148,9 +161,11 @@
       .meet-section{
          padding:0;
          height:100%;
+         background:none;
       }
       .meet-team{
           border-radius:0;
           margin:0;
+          width:100%;
       }
 }

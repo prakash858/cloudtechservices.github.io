@@ -5,67 +5,67 @@
         background-image: url("./img/project-intro.jpg");
         background-size:cover;
         box-shadow: inset 2000px 0 0 0 rgba(293, 43, 85, 0.4);
-        height:520px;
+        height:760px;
 }
 .project-intro h1{
-    font-size:65px;
+    font-size:90px;
     font-weight:bold;
     color:white;
     text-align:center;
-    padding-top:230px;
+    padding-top:315px;
     text-shadow:0px 4px #3C3C3C;
 }
 .project-init{
-    margin:40px 80px 0 30px;
+    margin:105px 226px 0 90px;
 }
 .project-init h1{
-     font-size:35px;
+     font-size:60px;
     font-weight:bold;
     color:#EF2B55;
 }
 .project-init p{
     padding-top:15px;
     color:#3F4040;
-    font-size:16px;
+    font-size:22px;
 }
 .project-content h3{
     text-align:center;
-    padding-top:20px;
+    padding-top:40px;
     font-weight:bold;
-    font-size:35px;
+    font-size:45px;
     color:#EF2B55;
     text-decoration:underline;
 }
 .content{
     display:flex;
-    margin:20px 50px 20px 60px;
+    margin:60px 90px 20px 90px;
 }
 .text{
   padding-top:75px;  
 }
 .text small{
-    font-size:14px;
+    font-size:20px;
     color:#3F4040;
 }
 .text h2{
-    font-size:30px;
+    font-size:45px;
     font-weight: bold;
     padding-top:15px;
     color:#00153B;
 }
 .text p{
-    font-size:16px;
-    padding-top:15px;
+    font-size:22px;
+    padding:25px 150px 0 0 ;
     color:#3F4040;
 }
 .text button{
     background:#EF2B55;
     color:white;
     border:none;
-    width:120px;
-    height:35px;
-    font-size:14px;
-    margin-top:15px;
+    width:150px;
+    height:45px;
+    font-size:16px;
+    margin-top:60px;
     cursor:pointer;
 }
 .interest{
@@ -73,29 +73,34 @@
     background: #EF2B55;
 }
 .interest h1{
-    font-size:35px;
+    font-size:60px;
     font-style:italic;
-    padding-top:20px;
+    padding-top:40px;
     color:white;
+    line-height:80px;
 }
 .interest button{
-    width:300px;
-    height:40px;
+    width:500px;
+    height:75px;
     border:none;
+    font-size:18px;
     color:#EF2B55;
-    margin:20px 0 40px 0;
+    margin:30px 0 60px 0;
     cursor:pointer;
 }
 
 
 /* Responsive */
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1500px){
   
     /* projects */
 
     .project-intro h1{
        font-size:45px;
     
+    }
+    .project-init{
+        margin:80px 80px 0 30px;
     }
     .project-init h1{
         font-size:25px;
@@ -107,7 +112,7 @@
         font-size:25px;
     }
     .content{
-      margin:40px 20px;  
+      margin:40px 30px;  
     }
     .image img{
         width:500px;
@@ -124,18 +129,22 @@
     }
     .text p{
         font-size:14px;
+        padding-right:20px;
     }
     .text button{
         width:100px;
         height:25px;
         font-size:12px;
+        margin-top:10px;
     }
     .interest h1{
         font-size:25px;
+        line-height:40px;
     }
     .interest button{
         width:250px;
         height:30px;
+        margin-top:20px;
 }
 
 }
@@ -144,7 +153,7 @@
 
 
     /* projects     */
-
+    
     .project-init{
         margin:30px 30px 0 30px;
     }
@@ -152,11 +161,9 @@
         display:none;
     }
     .content{
-        margin:5px 50px 20px 60px;
+        margin:0px 25px 20px 25px;
     }
     .text small{
         display:none;
-    }
-
-  
+    } 
 }
