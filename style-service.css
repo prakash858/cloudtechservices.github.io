@@ -82,10 +82,10 @@
     padding:105px 0 0 260px;
     font-weight:bold;
 }
-.row{
+.tool .row{
     margin:75px 260px 115px 260px; 
 }
-.column {
+.tool .column {
     float: left;
     width: 25%;
     text-align:center;
@@ -94,11 +94,7 @@
    
    
   }
-.column img{
-    width: 155px;
-    height:200px;
-}
-    
+
 
 
 /* Responsive */
@@ -129,9 +125,17 @@
          font-size:25px;
          padding-top:40px;
      }
+     .services .column h3{
+         font-size:25px;
+     }
+     .services .column p{
+        text-align:justify;
+        padding:15px 5px;
+     }
 
      .services .column{
-         width:38%;
+         width:45%;
+    margin-left:0px;
      }
     /* tools and technologies  */
     .tool h1{
