@@ -75,7 +75,6 @@
 }
 
 /* tools and technologies */
-
 .tool h1{
     font-size:60px;
     color:#EF2B55;
@@ -89,14 +88,17 @@
     float: left;
     width: 25%;
     text-align:center;
-    padding:60px;
+    padding:40px;
     border:1px solid #707070;
    
+   
   }
- .tool .column img{
+  .tool .column img{
     width: 155px;
     height:200px;
 }
+    
+
 
 
 
@@ -150,7 +152,7 @@
     }
      .tool .column {
         width: 25%;
-        padding:40px;
+        padding:45px;
       
       }
       .tool .column img{
@@ -188,10 +190,9 @@
 }
 /* tools and technologies  */
    
- .tool .column {
+ .tool  .column {
     width: 50%;
-    padding:25px;
-  
+    padding:10% 15%; 
   }
  
 }
