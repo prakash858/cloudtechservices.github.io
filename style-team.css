@@ -134,6 +134,12 @@
 
 }
 @media only screen and (max-width:767px){
+    .team-intro{
+        height:300px;
+    }
+    .team-intro h1{
+        padding-top:100px;
+    }
     .team-quote .column{
         padding-top:5px;
         margin: 0 30px ;  

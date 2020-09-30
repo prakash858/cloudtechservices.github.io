@@ -42,6 +42,7 @@
     background-image: url("./img/service.jpg");
     background-size:cover;
     box-shadow: inset 2000px 0 0 0 rgba(293, 43, 85, 0.7);
+   
 }
 .services h1{
     font-size:60px;
@@ -103,7 +104,7 @@
 
 
 /* Responsive */
-@media only screen and (max-width:1500px){
+@media only screen and (max-width:1800px){
 
     /* services  */
         .service-intro h1{
@@ -111,7 +112,7 @@
         }
         .intro-2{
             height:100%;
-            padding:80px 60px;
+            padding:80px 20%;
         }
       .text{
           width:100%;
@@ -139,8 +140,8 @@
      }
 
      .services .column{
-         width:45%;
-    margin-left:0px;
+         width: 46%;
+    margin-left:0;
      }
     /* tools and technologies  */
     .tool h1{
@@ -161,10 +162,18 @@
     }
 
 }
+
+
   @media only screen and (max-width:767px){
 
    
 /* services  */
+.service-intro{
+    height:300px;
+}
+.service-intro h1{
+    padding-top:110px;
+}
 .intro-2{
     padding:0;
 }
@@ -178,7 +187,7 @@
 }
 .services .column{
     width:100%;
-    margin:20px;   
+  margin-left:6%;   
 }
 .services .column h3{
    font-size:20px;
