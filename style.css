@@ -44,9 +44,7 @@
 /* About_section */
 
 .second-content{
-    display:flex;
-    width:100%;
-    
+    display:flex;   
 }
 
 .about{
@@ -190,8 +188,7 @@
 
 /* Responsive */
 
-@media only screen and (max-width:1000px){
-     
+@media only screen and (max-width:1350px){
 
       /* image slider */
       #slides .carousel-inner img{
@@ -222,12 +219,7 @@
       /* About Section */
 
       .second-content img{
-        width:100%;
-        
-       
-      }
-      .second-content{
-          display:flex;
+        height:300px;
       }
       .about{
           padding:0 20px 0 30px;
@@ -315,21 +307,7 @@
    
 
     }
-    @media only screen and (max-width:1350px){
-        .second-content img{
-            width:50%;
-            height:1000px;;
-          }
-          .team{
-              display:none;
-          }
-          .project img{
-                display:none;
-          }
-          .column{
-              width:50%;
-          }
-    }
+ 
     @media only screen and (max-width:1577px){
         .team{
             display:none;
