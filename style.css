@@ -86,7 +86,7 @@
 }
 .project{
     display:flex;
-    padding: 40px 115px 0 258px;
+    padding: 40px 70px 0 258px;
 }
 .project_section h1{
     font-size:45px;
@@ -109,7 +109,7 @@
     font-weight:bold;
 }
 .caption p{
-    font-size:24px;
+    font-size:22px;
     padding-top:25px;
     color:#3F4040;
 }
@@ -258,10 +258,11 @@
         }
         .caption{
             padding:50px 100px;
-            text-align:justify;
+           
         }
         .caption small{
             font-size:10px;
+            
             
          }
          .caption h3{
