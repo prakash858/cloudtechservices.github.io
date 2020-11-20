@@ -86,13 +86,14 @@
 }
 .project{
     display:flex;
-    padding: 40px 70px 0 258px;
+    padding: 40px 10px 120px 200px;
+    justify-content: space-between;
 }
 .project_section h1{
     font-size:45px;
     font-weight:bold;
     color:#EF2B55;
-    padding:105px 0 0 258px;
+    padding:105px 0 0 200px;
 }
 .caption{
     padding:80px 0 0 0px;
@@ -187,139 +188,166 @@
 
 
 /* Responsive */
-
-@media only screen and (max-width:1350px){
-
-      /* image slider */
-      #slides .carousel-inner img{
-          width:100%;
-         height:100%;
-          
-      }
-      .carousel-caption{
-        padding-top:25%;
-      }
-
-      .carousel-caption h1{
-          font-size:45px;
-          padding-bottom:30px;
-      }
-      .carousel-caption h2{
-          font-size:30px;
-          padding-bottom:30px;
-      }
-
-      .carousel-caption p{
-        display:none;
-      }
-      .carousel-inner{
-          height:100%;
-      }
-
-      /* About Section */
-
-      .second-content img{
-        height:300px;
-      }
-      .about{
-          padding:0 20px 0 30px;
-          
-      }
-      .about h1{
-        font-size:25px;
-        padding:30px 0 15px 0;
-       
+@media only screen and (max-width:1774px){
+    .project_section{
+        height:980px;
     }
-    .about p{
-        font-size:12px;
-        padding-bottom:15px;
+    .project img{
+        max-width:900px;
+        height:590px;
     }
-    .about button{
-        font-size: 10px;
-        width:150px;
-        height:30px;
-    }
+}
+@media only screen and (max-width:1710px){
+        .second-content img{
+            width:45%;
+        }
+}
 
-    /* Projects  */
-
-        .project img{
-            display:none;
-        }
-        .project_section h1{
-            font-size:25px;
-            padding:30px 0 0 100px ;
-        }
-        .project_section{
-            height:100%;
-            width:100%;
-        }
-        .project{
-            padding:0;
-        }
-        .caption{
-            padding:50px 100px;
-           
-        }
-        .caption small{
-            font-size:10px;
-            
-            
-         }
-         .caption h3{
-             font-size:20px;
-             padding-top:10px;
-             color:#00153B;
-         }
-         .caption p{
-             font-size:12px;
-             padding-top:10px;
-             color:#3F4040;
-         }
-         .caption button{
-             font-size:10px;
-             height:30px;
-             width:100px;
-             margin-top:10px;
-         }
-
-         /* tools and technologies  */
-         .tool h1{
-            font-size:25px;
-            padding:30px 0 0 50px;
-        }
-        .row{
-            margin:30px 50px 30px 50px; 
-        }
-         .column {
-            width: 25%;
-            padding:45px;
-          
-          }
-          .column img{
-            width: 100%;
-            height:100%;
-        }
-
-         /* team  */
-         .team{
-           
-            display:none;
-         }
-   
-
-    }
- 
+ @media only screen and (max-width:1597px){
+   .caption h3{
+       font-size:33px;
+   }
+   .caption p{
+       font-size:18px;
+   }
+   .caption small{
+       font-size:14px;
+   }
+ }
     @media only screen and (max-width:1577px){
         .team{
             display:none;
         }
         
     }
-    @media only screen and (max-width:1710px){
-            .second-content img{
-                width:45%;
-            }
+  
+    @media only screen and (max-width:1467px){
+        .project_section{
+            height:850px;
+        }
+        .project img{
+            width:750px;
+            height:480px;
+        }
     }
+    @media only screen and (max-width:1350px){
+
+        /* image slider */
+        #slides .carousel-inner img{
+            width:100%;
+           height:100%;
+            
+        }
+        .carousel-caption{
+          padding-top:25%;
+        }
+  
+        .carousel-caption h1{
+            font-size:45px;
+            padding-bottom:30px;
+        }
+        .carousel-caption h2{
+            font-size:30px;
+            padding-bottom:30px;
+        }
+  
+        .carousel-caption p{
+          display:none;
+        }
+        .carousel-inner{
+            height:100%;
+        }
+  
+        /* About Section */
+  
+        .second-content img{
+          height:300px;
+        }
+        .about{
+            padding:0 20px 0 30px;
+            
+        }
+        .about h1{
+          font-size:25px;
+          padding:30px 0 15px 0;
+         
+      }
+      .about p{
+          font-size:12px;
+          padding-bottom:15px;
+      }
+      .about button{
+          font-size: 10px;
+          width:150px;
+          height:30px;
+      }
+  
+      /* Projects  */
+  
+          .project img{
+              display:none;
+          }
+          .project_section h1{
+              font-size:25px;
+              padding:30px 0 0 100px ;
+          }
+          .project_section{
+              height:100%;
+              width:100%;
+          }
+          .project{
+              padding:0;
+          }
+          .caption{
+              padding:50px 120px;
+             
+          }
+          .caption small{
+              font-size:10px;
+           }
+           .caption h3{
+               font-size:20px;
+               padding-top:10px;
+               color:#00153B;
+           }
+           .caption p{
+               font-size:12px;
+               padding-top:10px;
+               color:#3F4040;
+           }
+           .caption button{
+               font-size:10px;
+               height:30px;
+               width:100px;
+               margin-top:10px;
+           }
+  
+           /* tools and technologies  */
+           .tool h1{
+              font-size:25px;
+              padding:30px 0 0 50px;
+          }
+          .row{
+              margin:30px 50px 30px 50px; 
+          }
+           .column {
+              width: 25%;
+              padding:45px;
+            
+            }
+            .column img{
+              width: 100%;
+              height:100%;
+          }
+  
+           /* team  */
+           .team{
+             
+              display:none;
+           }
+     
+  
+      }
         @media only screen and (max-width:767px){
             .carousel-caption{
                 padding-top:25%;
