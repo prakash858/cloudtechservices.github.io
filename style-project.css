@@ -2,9 +2,9 @@
 /* projects  */
 
 .project-intro{
-        background-image: url("./img/project-intro.jpg");
+        background-image: url("./img/project-intro.png");
         background-size:cover;
-        box-shadow: inset 2000px 0 0 0 rgba(293, 43, 85, 0.4);
+        box-shadow: inset 4000px 0 0 0 rgba(293, 43, 85,0.4);
         height:760px;
 }
 .project-intro h1{
@@ -65,7 +65,7 @@
     width:150px;
     height:45px;
     font-size:16px;
-    margin-top:60px;
+    margin-top:40px;
     cursor:pointer;
 }
 .interest{
@@ -95,58 +95,86 @@
   
     /* projects */
 
-    .project-intro h1{
-       font-size:45px;
     
-    }
     .project-init{
         margin:80px 80px 0 30px;
     }
-    .project-init h1{
-        font-size:25px;
-    }
-    .project-init p{
-        font-size:14px;
-    }
-    .project-content h3{
-        font-size:25px;
-    }
+    
+    
     .content{
       margin:40px 30px;  
     }
     .image img{
-        width:500px;
-        height:300px;
+        width:700px;
+        height:400px;
     }
     .text{
         padding-top:30px;
     }
-    .text small{
-        font-size:12px;
-    }
+    
     .text h2{
         font-size:20px;
     }
     .text p{
-        font-size:14px;
+        
         padding-right:20px;
     }
-    .text button{
+
+
+}
+@media only screen and (max-width:1350px){
+    .project-intro h1{
+        font-size:45px;
+     
+     }
+    
+     .project-init h1{
+         font-size:25px;
+     }
+     .project-init p{
+         font-size:14px;
+     }
+     .project-content h2{
+         font-size: 25px;
+     }
+     .project-content h3{
+         font-size:25px;
+     }
+     
+     .image img{
+        width:500px;
+        height:300px;
+    }
+     
+     .text small{
+         font-size:12px;
+     }
+     .text h2{
+         font-size:20px;
+     }
+     .text p{
+         font-size:14px;
+         
+     }
+     .text button{
+         font-size:12px;
+     }
+     .interest h1{
+         font-size:25px;
+         line-height:40px;
+     }
+     .text button{
         width:100px;
         height:25px;
-        font-size:12px;
+       
         margin-top:10px;
     }
-    .interest h1{
-        font-size:25px;
-        line-height:40px;
-    }
+
     .interest button{
         width:250px;
         height:30px;
         margin-top:20px;
 }
-
 }
 
 @media only screen and (max-width:767px){

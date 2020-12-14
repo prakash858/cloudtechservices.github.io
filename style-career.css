@@ -57,6 +57,7 @@
 }
 .contents .row{
     margin:30px 0 0  10%;
+    
 }
 .contents .column{
     width:675px;
@@ -65,6 +66,7 @@
     text-align:center;
     padding:85px 0;
     height:370px;
+    
 }
 .contents .column h3{   
     color:#666666;
@@ -85,29 +87,21 @@
 }
 
 @media only screen and (max-width:1660px){
-    .career-intro h1{
-        font-size:45px;
-    }
-    .initial p{
-        font-size:20px;
-        padding:50px 80px 0 80px;
-    }
-    .initial {
-        height:300px;
-    }
-    .contents img{
-        width:70%;
-        height:240px;
-        top:950px;
-    }
-    .contents h2{
-        padding-top:100px;
-    }
     .contents .row{
         margin-left:10px;
     }
     .contents.column{
         width:100%;
+    }
+}
+@media only screen and (max-width:1520px){
+    .contents img{
+        top:1800px;
+    }
+    @-moz-document url-prefix(){
+        .contents img{
+            top:1320px;
+        }
     }
 }
 @media only screen and (max-width:1500px){
@@ -117,6 +111,25 @@
     .contents .row{
         margin-left:4%;
     }
+}
+@media only screen and (max-width:1350px){
+    .career-intro h1{
+        font-size:45px;
+    }
+    .contents h2{
+        padding-top:100px;
+    }
+    .contents img{
+        display: none;
+    }
+    .initial p{
+        font-size:20px;
+        padding:50px 80px 0 80px;
+    }
+    .initial {
+        display:none;
+    }
+  
 }
     @media only screen and (max-width:767px)
     {

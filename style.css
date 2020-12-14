@@ -150,34 +150,32 @@
    
   }
 .column img{
-    width: 155px;
-    height:200px;
+    width: 130px;
+    height:152px;
 }
     
 /* team  */
-
-.team{
+#section_5{
     background-image: url("./img/team.png");
-    background-size:cover;
-    height:950px;
     width:100%;
-   display:flex;
-   padding: 350px 0 0 520px;
-  
+    background-size: cover;
+    height:100vh;
+    position: relative;
+    background-position:center center;
+
 }
-.team h1{
-    font-size:60px;
-     /* position:relative; */
-     line-height:90px;
-}
+
 .team button{
-    width:230px;
-    height:65px;
+    padding:12px 30px;
     background:#EF2B55;
     font-size:18px;
     border:none;
-   margin: 150px 0 0 400px;
+   /* margin: 150px 0 0 400px; */
    cursor:pointer;
+   position: absolute;
+   top:50%;
+   left:50%;
+   margin-left:200px;
 
 }
 .team a{
@@ -188,6 +186,7 @@
 
 
 /* Responsive */
+
 @media only screen and (max-width:1774px){
     .project_section{
         height:980px;
@@ -199,10 +198,21 @@
 }
 @media only screen and (max-width:1710px){
         .second-content img{
-            width:45%;
+            width: 50%;
+            height: auto;
+        }
+        .about{
+            padding-right:100px;
+        }
+        .about h1{
+            padding:120px 0 50px 0;
         }
 }
-
+@media only screen and (max-width:1638px){
+    .about p{
+        padding-bottom:62px;
+    }
+}
  @media only screen and (max-width:1597px){
    .caption h3{
        font-size:33px;
@@ -214,13 +224,16 @@
        font-size:14px;
    }
  }
-    @media only screen and (max-width:1577px){
-        .team{
-            display:none;
-        }
-        
-    }
   
+    @media only screen and (max-width:1522px){
+            .about h1{
+                padding:70px 0 30px 0;
+            }
+            .about p{
+                padding-bottom: 42px;
+            }
+           
+        }
     @media only screen and (max-width:1467px){
         .project_section{
             height:850px;
@@ -260,11 +273,11 @@
   
         /* About Section */
   
-        .second-content img{
+        /* .second-content img{
           height:300px;
-        }
+        } */
         .about{
-            padding:0 20px 0 30px;
+            padding:0 20px 15px 30px;
             
         }
         .about h1{
@@ -328,25 +341,16 @@
               padding:30px 0 0 50px;
           }
           .row{
-              margin:30px 50px 30px 50px; 
+              margin:30px 45px 30px 45px; 
           }
            .column {
-              width: 25%;
-              padding:45px;
+              padding:30px;
             
             }
             .column img{
-              width: 100%;
-              height:100%;
+              width: 100px;
+              height: 130px;
           }
-  
-           /* team  */
-           .team{
-             
-              display:none;
-           }
-     
-  
       }
         @media only screen and (max-width:767px){
             .carousel-caption{
@@ -403,12 +407,14 @@
       
       .tool .column {
           width: 50%;
-          padding:10% 15%; 
+          /* padding:10% 15%;  */
         }
-
+        .column img{
+            width:85px;
+        }
        /* team  */
-       .team{
-          display:none;
+       #section_5{
+           display:none;
        }
 
       }

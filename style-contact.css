@@ -1,4 +1,7 @@
-
+html, body{
+    width:100%;
+    overflow-x:hidden;
+}
 .contact-section{
     background-color:#F5F5F5;
    
@@ -51,7 +54,7 @@
     margin:5px 0 0 48px;
 }
 .column {
-    margin:27px 0 0 125px;
+    margin:27px 0 0 100px;
 
 }
 .column h2{
@@ -61,12 +64,12 @@
     text-align:center;
 }
 .row{
-    height:15%;
+    /* height:15%; */
     background:rgba(3, 245, 237, 0.6);
     margin:45px 50px 30px 50px;
     text-align:center;
-    padding:30px 40px;
-    font-size:22px;
+    padding:35px 20px;
+    font-size:20px;
     font-weight:bold;
     color:white;
 
@@ -76,7 +79,7 @@
     color:#464444;
 }
 .map{
-    margin: 85px 0 55px 186px;;
+    margin: 20px auto;
     padding: 30px;
     width:1510px;
     background-color: #fff;
@@ -87,7 +90,32 @@
 
 
 /* Responsive */
+@media only screen and (max-width:1663px){
+    .column h2{
+        font-size:45px;
+    }
+    .column{
+        margin-top:80px;
+        margin-left:70px;
+    }
+    .row{
+        font-size:18px;
+        padding:20px 10px;
+    }
+}
 @media only screen and (max-width:1500px){
+    
+   
+    .map{
+        margin:40px auto;  
+        width:1200px;
+    }
+    .map img{
+        width:100%;
+        height:auto;
+    }
+}
+@media only screen and (max-width:1350px){
 
    .heading h1{
     font-size:20px;  
@@ -118,17 +146,12 @@
     font-size:25px;
 }
 .row {
-    font-size:12px;
-    padding:10px 10px;
-    height:12%;
+    font-size:16px;
+    padding:10px;
+   
 }
 .map{
-    margin:40px 0 40px 30px;  
-    width:700px;
-}
-.map img{
-    width:100%;
-    height:310px;
+    width:768px;
 }
 }
 /* Responsive */
@@ -146,7 +169,7 @@
     margin:15px 15px 0 15px;
 }
 .contact-form{
-    margin-left:30px;
+    margin-left:40px;
     margin-top:40px;
     height:520px;
 
@@ -158,13 +181,20 @@
 .column h2{
     padding-left:10px;
 }
-
+.column{
+    margin-top:40px;
+}
 .row{
     width:100%;
     margin:15px 0px 25px 20px;
-    height:15%;
 }
 .map{
-    display:none;
+    width:500px;
+    margin:20px auto;
 }
+}
+@media only screen and (max-width:499px){
+    .map{
+        width:320px;
+    }
 }

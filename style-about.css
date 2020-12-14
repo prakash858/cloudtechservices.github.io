@@ -18,7 +18,8 @@
     width:100%;
 }
 .about{
-    padding:100px 90px 0 90px;
+    padding:100px 90px 100px 90px;
+    
 }
 .about h1{
     font-size:60px;
@@ -49,17 +50,19 @@
 }
 .meet-section{
     background-image: url("./img/meet-team.png");
-    background-size:cover;
-    height:840px;
-    padding-top:35px;
+    background-position:center center;
+    background-repeat: no-repeat;
+    height:100%;
+    padding:35px 0;
+    width:100%;
 }
 .meet-team{
     border-radius: 50%;
-    height:760px;
-    width:760px;
+    height:600px;
+    width:600px;
     background-color:#EF2B55;
     text-align:center;
-    margin-left:580px;
+    margin:auto;
     padding:80px 50px 0 50px;
     color:white;
    
@@ -69,86 +72,91 @@
     font-weight:bold;
 }
 .meet-team p{
-    padding-top:50px;
+    padding-top:20px;
     font-size:20px;
    
 }
 .meet-team button{
-    margin-top:45px;
-    width:280px;
-    height:55px;
+    margin-top:30px;
+    padding:10px 40px;
     background:none;
     border:2px solid white;
     cursor:pointer;
     color:white;
     font-size:18px;
 }
-
-@media only screen and (max-width:1500px){
-    
-/* about  */
-.about-intro{
-    height:450px;
-}
-    .about-intro h1{
-        font-size:45px;
-        padding-top:200px;
-        
-    }
-    .why-us{
-        display:block;
-    }
+@media only screen and (max-width:1694px){
     .why-us img{
-    display:none;
-       
-    }
-    .about{
-        padding:50px 40px 0 40px;
-    }
-    .about h1{
-        font-size:25px;
-    }
-    .about p{
-        font-size:12px;
+        width:850px;
     }
     .motto{
-        padding:60px 100px 40px 100px;
+        padding:100px 200px;
     }
-    .motto h1{
-        font-size:20px;
-    }
-    .motto p{
-        font-size:12px;
-    }
-    .meet-section{
-   height:400px;
-    }
-    .meet-team{
-        width:320px;
-        height:320px;
-        margin-left:33%;
-       padding:30px 20px 0 20px;
-    }
-    .meet-team h2{
-        font-size:20px;
-    }
-    .meet-team p{
-        font-size:12px;
-        padding-top:10px;
-    }
-    .meet-team button{
-        width:120px;
-        height:30px;
-        font-size:12px;
-        margin-top:auto;
-    }
-
 }
-@media only screen and (max-width:1750px){
+@media only screen and (max-width:1488px){
     .why-us img{
-        width:40%;
+        width:750px;
     }
 }
+
+@media only screen and (max-width:1350px){
+    
+    /* about  */
+    .about-intro{
+        height:450px;
+    }
+        .about-intro h1{
+            font-size:45px;
+            padding-top:200px;
+            
+        }
+        .why-us{
+            display:block;
+        }
+        .why-us img{
+        display:none;
+           
+        }
+        .about{
+            padding:50px 40px 30px 40px;
+        }
+        .about h1{
+            font-size:25px;
+        }
+        .about p{
+            font-size:12px;
+        }
+        .motto{
+            padding:60px 100px 40px 100px;
+        }
+        .motto h1{
+            font-size:22px;
+        }
+        .motto p{
+            padding-top:25px;
+            font-size:12px;
+        }
+        
+        .meet-team{
+            width:340px;
+            height:340px;
+            /* margin-left:33%; */
+           padding:30px 20px 0 20px;
+        }
+        .meet-team h2{
+            font-size:20px;
+        }
+        .meet-team p{
+            font-size:12px;
+            padding-top:10px;
+        }
+        .meet-team button{
+            margin-top:15px;
+            padding:7px 20px;
+            font-size:12px;
+        }
+    
+    }
 @media only screen and (max-width:767px){
     .about-intro{
         height:300px;
@@ -165,17 +173,13 @@
       .motto{
           padding:40px 20px 20px 20px;
       }
-      .motto p{
-          display:none;
-      }
-      .meet-section{
-         padding:0;
-         height:100%;
-         background:none;
-      }
+      
       .meet-team{
-          border-radius:0;
-          margin:0;
-          width:100%;
+        width:300px;
+        height:300px;  
       }
+      .meet-team button{
+          padding:5px 15px;
+          margin-top:5px;
+      } 
 }

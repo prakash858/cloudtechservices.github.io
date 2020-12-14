@@ -1,4 +1,9 @@
-
+html,body{
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
 .team-intro{
     background: url("./img/team-intro.png");
     background-size: cover;
@@ -14,13 +19,14 @@
 .team-quote{
     background: url("./img/team-2.png");
     background:cover;
-    height:645px;
-    box-shadow: inset 2000px 0 0 0 rgba(293, 43, 85, 0.75);
+    height:625px;
+    background-repeat: no-repeat;
+    box-shadow: inset 3000px 0 0 0 rgba(293, 43, 85, 0.75);
     color:white;
 }
 .team-quote .column{
     padding-top:65px;
-    margin: 0 594px ;
+    margin: 0 540px ;
     
 }
 .team-quote .column span{
@@ -58,7 +64,8 @@
 }
 .team .row{
     
-    margin:40px 0 70px 180px;
+    margin:40px 0 70px 0px;
+    justify-content: center;
 }
 .carousel-control-prev, .carousel-control-next{
     top:50%;
@@ -67,11 +74,11 @@
 .fa-chevron-circle-left, .fa-chevron-circle-right{
     color:#EF2B55;
 }
-.team img{
-    margin-left:70px;
+.team .column{
+    padding:0 15px;
 }
 .team .row .caption{
-    margin:-80px 0 0 200px;
+    margin:-80px 0 0 150px;
     color:white;
 }
 
@@ -95,8 +102,22 @@
     margin:30px 0 40px 0;
     cursor:pointer;
 }
-
-@media only screen and (max-width:1500px){
+@media only screen and (max-width:1580px){
+.team-quote .column {
+    margin:0 450px;
+}
+.team img{
+    width:250px;
+    height:250px;
+}
+.team .column{
+    padding:0 10px;
+}
+.team .row .caption{
+    margin: -70px 0 0 110px;
+}
+}
+@media only screen and (max-width:1350px){
     .team-intro h1{
         font-size:45px;
     }
@@ -118,20 +139,36 @@
         font-size:30px;
     }
    .team .row{
-       width:100%;
        margin:0px 0px 70px 55px;  
    }
+   .team h1{
+       margin-bottom:10px;
+   }
+   .team .column{
+       padding:0 10px;
+   }
    .team img{
-       padding-top:50px;
-       margin-left:20px;
+       width:160px;
+       height:160px;
+       margin-top:40px;
    }
    .team .row .caption{
-    margin:-80px 0 0 160px;
+    margin:-50px 0 0 20px;
+    font-size:14px;
 }
    .join h1{
        font-size:35px;
    }
 
+}
+@media only screen and (max-width:990px){
+    .team img{
+        width:125px;
+        height:125px;
+    }
+    .team .row .caption{
+        margin:-50px 0 0 10px;
+    }
 }
 @media only screen and (max-width:767px){
     .team-intro{
@@ -150,13 +187,16 @@
     .team-quote .column span{
         font-size:30px;
     }
+    .team-quote .row{
+        height:50px;
+    }
     
     .team .row{
         margin:10px 0 30px 0; 
     }
     .team img{
-       margin-left:10px;
-       padding-top:20px;
+      width:250px;
+      height:250px;
     }
     .team h1{
         margin-left:15px;
